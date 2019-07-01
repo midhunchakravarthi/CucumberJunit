@@ -1,0 +1,4 @@
+com\runner\FireFoxRunner.class
+com\stepdefinitions\CommonStepDefinitions.class
+com\Reporting\Reporting.class
+com\genericmethods\GenericMethods.class
