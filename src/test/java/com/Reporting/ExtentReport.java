@@ -24,13 +24,14 @@ public class ExtentReport extends FakerMethods{
 	 * @return
 	 */
 	
-	public static void initReport()
+	public static void initReport(String scenario)
 	{
 		System.out.println("Intializing Report.....");
-		extent=new ExtentReports(createResultFolder()+"\\Test Summary Report.html");
+		extent=new ExtentReports(createResultFolder()+"\\"+scenario+".html");
 		
 		extent.addSystemInfo("Sprint #","Sprint 1")
 		.addSystemInfo("Environment","QA");
+		startTestReport(scenario);
 		
 		System.out.println("Report intialization completed");
 	}

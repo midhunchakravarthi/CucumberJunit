@@ -1,6 +1,7 @@
 package com.applicationpages;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import org.openqa.selenium.By;
@@ -9,6 +10,9 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.applicationor.JobSeekerOR;
 import com.commonutils.CommonUtlities;
+
+import cucumber.api.DataTable;
+import cucumber.api.java.en.And;
 
 public class JobSeeker_StepDefinitions extends CommonUtlities {
 
@@ -330,4 +334,19 @@ try{
 							+ e.getMessage());
 		}
 	}
+	
+	
+	@And("user pass the following data for the personal details")
+	public static void enterPersonalDetails(DataTable table)
+	{
+		List<List<String>> datatable=table.raw();
+		
+		System.out.println(datatable.get(1).get(0));
+		
+	}
+	
+	
+	
+	
+	
 }

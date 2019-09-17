@@ -9,7 +9,7 @@ import cucumber.api.junit.Cucumber;
 
 @CucumberOptions(features="Features",
 				glue= {"com.applicationpages"},
-				tags = {"~@Vamshi"},
+				tags = {"@Vamshi"},
 				monochrome = true	)
 
 
