@@ -123,7 +123,6 @@
 					<includes>
 						<include>**/*Runner*.class</include>
 					</includes>
-
 				</configuration>
 			</plugin>
 		</plugins>
